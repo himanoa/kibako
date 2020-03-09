@@ -5,5 +5,8 @@
   "main": "index.js",
   "author": "himanoa",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
 }
