@@ -1,0 +1,9 @@
+{
+  "name": "@kibako/core",
+  "version": "0.0.1",
+  "description": "IoC container",
+  "main": "index.js",
+  "author": "himanoa",
+  "license": "MIT",
+  "private": false
+}
