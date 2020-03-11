@@ -1,4 +1,10 @@
+const base = require("./jest.config.base.js");
+
 module.exports = {
-  preset: 'ts-jest',
-  testEnvironment: 'node',
+    ...base,
+    projects:
+    [
+        "<rootDir>/packages/*/jest.config.js"
+    ],
+    coverageDirectory: "<rootDir>/coverage/"
 };
