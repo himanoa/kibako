@@ -1,0 +1,15 @@
+name: "all-test"
+on: [pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+      - run: yarn install --frozen-lockfile
+      - uses: ChristiaanScheermeijer/jest-reporter-action@v0.4.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          test-command: "yarn test --coverage"
