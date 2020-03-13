@@ -1,10 +1,10 @@
 import Container from "./index"
 
-const targetFn = (deps: {dep1: string}) => () => 2
+const targetFn = (deps: {dep1: string}) => () => deps.dep1
 const container  = new Container()
 
 container.bind("foo", () => "foo")
-container.bind(targetFn, (container) => targetFn(container.resolve("foo")))
+container.bind(targetFn, (container) => targetFn({dep1: container.resolve("foo")}))
 
 describe("Container", () => {
   describe("#resolve", () => {
@@ -18,7 +18,8 @@ describe("Container", () => {
     describe("when dependencies can be resolved", () => {
       it("should be resoled", () => {
         const target = container.resolve(targetFn)
-        expect(target()).toBe(2)
+        console.dir(container.resolve("foo"))
+        expect(target()).toBe("foo")
       })
     })
   })
