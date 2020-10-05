@@ -7,7 +7,8 @@
   "private": true,
   "scripts": {
     "test": "jest",
-    "lint": "eslint packages/**/*.ts"
+    "lint": "eslint packages/**/*.ts",
+    "prettier": "prettier --write packages/**/*.ts"
   },
   "workspaces": {
     "packages": [
