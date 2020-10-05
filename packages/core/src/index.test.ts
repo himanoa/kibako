@@ -29,4 +29,47 @@ describe("Container", () => {
       });
     });
   });
+
+  describe("#merge", () => {
+    it("should be not resolved", () => {
+      const c = new Container();
+      // eslint-disable-next-line
+      function fn(_deps: {}) {
+        return () => 2112;
+      }
+      c.bind(fn, () => {
+        return fn({});
+      });
+      expect(() => container.resolve(fn)()).toThrowError();
+    });
+
+    it("should be resolved", () => {
+      const c = new Container();
+      // eslint-disable-next-line
+      function fn(_deps: {}) {
+        return () => 2112;
+      }
+      c.bind(fn, () => {
+        return fn({});
+      });
+      container.merge(c);
+      expect(container.resolve(fn)()).toEqual(2112);
+    });
+  });
+
+  describe("build", () => {
+    it("should be resolved", () => {
+      const c = new Container();
+      // eslint-disable-next-line
+      function fn(_deps: {}) {
+        return () => 2112;
+      }
+      c.bind(fn, () => {
+        return fn({});
+      });
+      const cons = Container.build([container, c]);
+      expect(cons.resolve(fn)()).toEqual(2112);
+      expect(cons.resolve(targetFn)()).toEqual("foo");
+    });
+  });
 });

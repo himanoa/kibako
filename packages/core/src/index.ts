@@ -27,4 +27,18 @@ export default class Container {
     }
     throw new Error(`${key} is not defined`);
   }
+
+  merge(container: Container) {
+    for (const [key, impl] of container.deps) {
+      this.dependenciesMap.set(key, impl)
+    }
+  }
+
+  static build(containers: Container[]): Container {
+    const c = new Container()
+    for(const cc of containers) {
+      c.merge(cc)
+    }
+    return c
+  }
 }
