@@ -72,4 +72,29 @@ describe("Container", () => {
       expect(cons.resolve(targetFn)()).toEqual("foo");
     });
   });
+
+  describe("#checkAllResolver", () => {
+    it("should be ok", () => {
+      expect(container.checkAllResolver()).toBe(undefined);
+    });
+
+    it("should be throw error", () => {
+      const c = new Container();
+      c.bind(
+        () => {},
+        () => {
+          throw Error();
+        }
+      );
+      c.bind(
+        () => {},
+        () => {
+          throw Error("foo");
+        }
+      );
+      expect(() => c.checkAllResolver()).toThrowErrorMatchingInlineSnapshot(
+        `"Error: Resolve error: () => { } Error,Error: Resolve error: () => { } Error: foo"`
+      );
+    });
+  });
 });

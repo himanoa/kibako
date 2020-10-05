@@ -41,4 +41,20 @@ export default class Container {
     }
     return c
   }
+
+  checkAllResolver() {
+    const errors: Error[] = [];
+    for (const [key] of this.dependenciesMap.entries()) {
+      try {
+        this.resolve(key)
+      } catch(err) {
+        errors.push(new Error(`Resolve error: ${key} ${err}`))
+      }
+    }
+
+    if(errors.length !== 0) {
+      throw new Error(errors.toString())
+    }
+  }
+  
 }
