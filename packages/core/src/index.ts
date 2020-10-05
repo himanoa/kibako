@@ -4,10 +4,17 @@ type ID<T> = Required<Class<T>> | T
 
 export default class Container {
   private dependenciesMap = new Map()
+
   constructor() {}
+
+  get deps() {
+    return this.dependenciesMap.entries()
+  }
+
   bind<T extends {(deps: object): ReturnType<T>}>(key: ID<T>, resolver: Resolver<T, ReturnType<T>>) {
     this.dependenciesMap.set(key, resolver)
   }
+
   resolve<T extends { (): ReturnType<T> }>(key: ID<T>): ReturnType<T> {
     const resolver = this.dependenciesMap.get(key)
     if(resolver) {

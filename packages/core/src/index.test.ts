@@ -7,6 +7,11 @@ container.bind("foo", () => "foo")
 container.bind(targetFn, (container) => targetFn({dep1: container.resolve("foo")}))
 
 describe("Container", () => {
+  describe('#get', () => {
+    it('should be container state', () => {
+      expect(container.deps).toMatchInlineSnapshot()
+    })
+  })
   describe("#resolve", () => {
     describe("when dependencies can not be resolved", () => {
       it("should be resoled", () => {
@@ -18,7 +23,6 @@ describe("Container", () => {
     describe("when dependencies can be resolved", () => {
       it("should be resoled", () => {
         const target = container.resolve(targetFn)
-        console.dir(container.resolve("foo"))
         expect(target()).toBe("foo")
       })
     })
