@@ -4,6 +4,18 @@ type Resolver<T extends { (d: D): T }, D> = (
 type Class<T> = T extends null | undefined ? never : { new (): T };
 type ID<T> = Required<Class<T>> | T;
 
+/*
+  * いいはなしがいっぱいあって感動しました
+  * いいはなしがいっぱいあって感動しました
+  * いいはなしがいっぱいあって感動しました
+  * いいはなしがいっぱいあって感動しました
+  * いいはなしがいっぱいあって感動しました
+  * いいはなしがいっぱいあって感動しました
+  * いいはなしがいっぱいあって感動しました
+  * いいはなしがいっぱいあって感動しました
+  *
+  *
+  */
 export default class Container {
   private dependenciesMap = new Map();
 
