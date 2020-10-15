@@ -5,7 +5,7 @@ const config = [
   {
     input: "./src/index.ts",
     output: [{ file: "lib/index-esm.js", format: "es" }],
-    plugins: [typescript()],
+    plugins: [typescript({ declarationDir: "./lib"})],
   },
   {
     input: "./src/index.ts",
