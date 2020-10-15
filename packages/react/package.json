@@ -4,5 +4,20 @@
   "description": "kibako binding for React",
   "main": "index.js",
   "author": "himanoa",
-  "license": "MIT"
+  "license": "MIT",
+  "main": "lib/index-cjs.js",
+  "module": "lib/index-esm.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "README.md",
+    "lib/index-cjs.js",
+    "lib/index-esm.js",
+    "lib/index.d.ts",
+    "package.json"
+  ],
+  "peerDependencies": {
+    "react": "^16.8.3"
+  },
+  "homepage": "https://github.com/himanoa/kibako",
+  "repository": "github:himanoa/kibako"
 }
