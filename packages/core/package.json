@@ -31,5 +31,5 @@
   "scripts": {
     "build": "tsc --noEmit && rollup -c ./rollup.config.js"
   },
-  "gitHead": "8f4108363415b5b780df4d743cf9bbaa765fe64f"
+  "gitHead": "45b63b66967c1676f40160c295b80c5ef9ad7630"
 }
