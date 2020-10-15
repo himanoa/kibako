@@ -15,5 +15,12 @@
   },
   "dependencies": {
     "@types/jest": "^25.1.4"
-  }
+  },
+  "files": [
+    "README.md",
+    "lib/index-cjs.js",
+    "lib/index-esm.js",
+    "lib/index.d.ts",
+    "package.json"
+  ],
 }
