@@ -1,0 +1,8 @@
+{
+  "name": "@kibako/react",
+  "version": "0.0.1",
+  "description": "kibako binding for React",
+  "main": "index.js",
+  "author": "himanoa",
+  "license": "MIT"
+}
