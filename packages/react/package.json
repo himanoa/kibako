@@ -16,7 +16,8 @@
     "package.json"
   ],
   "peerDependencies": {
-    "react": "^16.8.3"
+    "react": "^16.8.3",
+    "@kibako/core": "*"
   },
   "homepage": "https://github.com/himanoa/kibako",
   "repository": "github:himanoa/kibako"
