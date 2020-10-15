@@ -8,6 +8,9 @@
   "license": "MIT",
   "private": false,
   "types": "lib/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@types/jest": "^25.1.4",
     "jest": "^25.1.0",

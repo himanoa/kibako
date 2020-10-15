@@ -8,6 +8,9 @@
   "module": "lib/index-esm.js",
   "types": "lib/index.d.ts",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "README.md",
     "lib/index-cjs.js",
