@@ -21,6 +21,8 @@
   "homepage": "https://github.com/himanoa/kibako",
   "repository": "github:himanoa/kibako",
   "devDependencies": {
-    "rollup": "^2.30.0"
+    "rollup": "^2.30.0",
+    "@kibako/core": "*",
+    "react": "^16.8.3"
   }
 }
