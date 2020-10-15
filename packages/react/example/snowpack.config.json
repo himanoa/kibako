@@ -1,5 +1,5 @@
 {
   "extends": "@snowpack/app-scripts-react",
   "scripts": {},
-  "plugins": []
+  "plugins": ["@snowpack/plugin-typescript"]
 }

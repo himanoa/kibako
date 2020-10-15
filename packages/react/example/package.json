@@ -5,10 +5,11 @@
   "author": "himanoa",
   "devDependencies": {
     "@snowpack/app-scripts-react": "^1.12.3",
-    "snowpack": "^2.14.0",
-    "typescript": "^3.8.3",
+    "@snowpack/plugin-typescript": "^1.0.1",
     "@types/react": "^16.13.0",
-    "@types/react-dom": "^16.13.0"
+    "@types/react-dom": "^16.13.0",
+    "snowpack": "^2.14.0",
+    "typescript": "^3.8.3"
   },
   "dependencies": {
     "@kibako/core": "*",
