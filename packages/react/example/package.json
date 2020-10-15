@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "himanoa",
+  "private": true,
   "devDependencies": {
     "@babel/preset-react": "^7.10.4",
     "@babel/preset-typescript": "^7.12.0",
