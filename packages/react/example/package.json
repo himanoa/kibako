@@ -4,6 +4,7 @@
   "main": "index.js",
   "author": "himanoa",
   "devDependencies": {
+    "@snowpack/app-scripts-react": "^1.12.3",
     "snowpack": "^2.14.0",
     "typescript": "^3.8.3"
   },
