@@ -8,7 +8,7 @@
     "snowpack": "^2.14.0",
     "typescript": "^3.8.3",
     "@types/react": "^16.13.0",
-    "@typess/react-dom": "^16.13.0"
+    "@types/react-dom": "^16.13.0"
   },
   "dependencies": {
     "@kibako/core": "*",
