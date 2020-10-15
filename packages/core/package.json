@@ -23,5 +23,8 @@
     "lib/index-esm.js",
     "lib/index.d.ts",
     "package.json"
-  ]
+  ],
+  "scripts": {
+    "build": "rollup -c ./rollup.config.js"
+  }
 }
