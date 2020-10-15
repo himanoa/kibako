@@ -6,6 +6,7 @@
   "author": "himanoa",
   "license": "MIT",
   "private": false,
+  "type": "lib/index.d.ts",
   "devDependencies": {
     "@types/jest": "^25.1.4",
     "jest": "^25.1.0",
