@@ -1,0 +1,3 @@
+{
+  "presets": [["@babel/typescript", { "isTSX": true, "allExtensions": true, "sourceMap": true }],["@babel/react"]]
+}
