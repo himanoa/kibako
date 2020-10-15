@@ -16,12 +16,12 @@ function buildBar(deps: {
 }
 
 container.bind(buildFoo, () => buildFoo({}))
-container.bind(buildBar, (c) => buildBar(c.resolve({deps: buildFoo})))
+container.bind(buildBar, (c) => buildBar({foo: c.resolve(buildFoo)}))
 
 const App = () => {
-  const bar = useImpl(buildBar)
+  const bar = useImpl(buildFoo)
 
-  return <button onClick={bar}>Click me</button>
+  return <button onClick={() => console.log(bar())}>Click me</button>
 }
 
 ReactDOM.render(
