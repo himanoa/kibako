@@ -1,5 +1,7 @@
 'use strict';
 
+Object.defineProperty(exports, '__esModule', { value: true });
+
 class Container {
     constructor() {
         this.dependenciesMap = new Map();
@@ -45,4 +47,4 @@ class Container {
     }
 }
 
-module.exports = Container;
+exports.default = Container;
