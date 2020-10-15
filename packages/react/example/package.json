@@ -13,5 +13,9 @@
     "@kibako/react": "*",
     "react": "*"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  }
 }
