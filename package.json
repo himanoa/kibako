@@ -8,7 +8,8 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint packages/**/*.ts",
-    "prettier": "prettier --write packages/**/*.ts"
+    "prettier": "prettier --write packages/**/*.ts",
+    "clean": "rm -rf packages/core/lib/* packages/react/lib/*"
   },
   "workspaces": {
     "packages": [
@@ -21,6 +22,7 @@
     "@typescript-eslint/parser": "^2.23.0",
     "eslint": "^6.8.0",
     "jest": "^25.1.0",
+    "lerna": "^3.22.1",
     "ts-jest": "^25.2.1",
     "typescript": "^3.8.3"
   }

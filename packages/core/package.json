@@ -6,14 +6,28 @@
   "author": "himanoa",
   "license": "MIT",
   "private": false,
+  "types": "lib/index.d.ts",
   "devDependencies": {
     "@types/jest": "^25.1.4",
     "jest": "^25.1.0",
     "prettier": "^2.1.2",
+    "rollup": "^2.30.0",
+    "rollup-plugin-dts": "^1.4.13",
+    "rollup-plugin-typescript2": "^0.27.3",
     "ts-jest": "^25.2.1",
     "typescript": "^3.8.3"
   },
   "dependencies": {
     "@types/jest": "^25.1.4"
+  },
+  "files": [
+    "README.md",
+    "lib/index-cjs.js",
+    "lib/index-esm.js",
+    "lib/index.d.ts",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "tsc --noEmit && rollup -c ./rollup.config.js"
   }
 }
