@@ -27,6 +27,6 @@
     "package.json"
   ],
   "scripts": {
-    "build": "rollup -c ./rollup.config.js"
+    "build": "tsc --noEmitJs && rollup -c ./rollup.config.js"
   }
 }
