@@ -7,6 +7,7 @@
   "license": "MIT",
   "module": "lib/index-esm.js",
   "types": "lib/index.d.ts",
+  "private": false,
   "files": [
     "README.md",
     "lib/index-cjs.js",
@@ -30,5 +31,6 @@
     "rollup": "^2.30.0",
     "rollup-plugin-dts": "^1.4.13",
     "rollup-plugin-typescript2": "^0.27.3"
-  }
+  },
+  "gitHead": "27cea642be354ae8d4e0e60a5a287c6a6dc291ef"
 }
