@@ -9,7 +9,7 @@ const config = [
   },
   {
     input: "./src/index.ts",
-    output: [{ file: "lib/index-cjs.js", format: "cjs" }],
+    output: [{ file: "lib/index-cjs.js", format: "cjs", exports: "named" }],
     plugins: [typescript()],
   },
   {
