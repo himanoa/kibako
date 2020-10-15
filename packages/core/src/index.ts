@@ -1,8 +1,8 @@
-type Resolver<T extends { (d: D): T }, D> = (
+export type Resolver<T extends { (d: D): T }, D> = (
   container: Container
 ) => ReturnType<T>;
-type Class<T> = T extends null | undefined ? never : { new (): T };
-type ID<T> = Required<Class<T>> | T;
+export type Class<T> = T extends null | undefined ? never : { new (): T };
+export type ID<T> = Required<Class<T>> | T;
 
 export default class Container {
   private dependenciesMap = new Map();
