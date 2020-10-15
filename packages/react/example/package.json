@@ -1,6 +1,6 @@
 {
   "name": "@kibako/react-example",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "author": "himanoa",
   "private": true,
@@ -15,8 +15,8 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "@kibako/core": "*",
-    "@kibako/react": "*",
+    "@kibako/core": "^0.0.1",
+    "@kibako/react": "^0.0.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
   },
