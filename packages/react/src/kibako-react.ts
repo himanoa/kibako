@@ -6,9 +6,9 @@ type KibakoContext = Context<Container | null>
 type UseImpl<T extends {(deps: object): ReturnType<T>}>  = (key: T) => ReturnType<T>;
 
 export const buildUseImpl: <T extends {(deps: object): ReturnType<T>}>(ctx: KibakoContext) => UseImpl<T> = (ctx) =>  {
-  const container = useContext(ctx)
 
   return (key) => {
+    const container = useContext(ctx)
     if(container === null) {
       throw new Error("container is not provided")
     }
