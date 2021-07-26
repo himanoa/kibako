@@ -28,7 +28,6 @@
     "build": "tsc --noEmit && rollup -c ./rollup.config.js"
   },
   "devDependencies": {
-    "@kibako/core": "^0.0.9-alpha.0",
     "@types/react": "^16.9.52",
     "react": "^16.8.3",
     "rollup": "^2.30.0",

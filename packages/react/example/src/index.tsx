@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Container from "@kibako/core";
-import { useImpl, KibakoContext } from "@kibako/react";
+import { createKibakoContext } from "../../src/";
 
+const { KibakoContext, useImpl } = createKibakoContext()
 const container = new Container();
 
 function buildFoo(deps: {}) {
