@@ -1,6 +1,6 @@
 {
   "name": "@kibako/react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "kibako binding for React",
   "main": "lib/index-cjs.js",
   "author": "himanoa",
