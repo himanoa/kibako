@@ -1,6 +1,6 @@
 {
   "name": "@kibako/react-example",
-  "version": "0.0.5-alpha.0",
+  "version": "0.1.0",
   "main": "index.js",
   "author": "himanoa",
   "private": true,
