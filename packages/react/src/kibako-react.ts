@@ -3,7 +3,7 @@ import Container from '@kibako/core';
 
 type KibakoContext = Context<Container | null>
 
-type UseImpl<T extends {(deps: object): ReturnType<T>}>  = (key: T) => ReturnType<T>;
+type UseImpl<T> = (symbolFn: () => T) => T;
 
 export const buildUseImpl: <T extends {(deps: object): ReturnType<T>}>(ctx: KibakoContext) => UseImpl<T> = (ctx) =>  {
 
