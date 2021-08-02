@@ -21,6 +21,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "start": "vite"
+    "start": "vite",
+    "build": "echo 1;"
   }
 }
